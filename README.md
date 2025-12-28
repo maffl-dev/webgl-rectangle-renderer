@@ -5,6 +5,9 @@ A static 2D rectangle renderer built with WebGL:
 - Zoom-invariant strokes 
 - diagonal hatch pattern 
 
+**Demo**:
+https://webgl-rectangle-renderer-strokes.vercel.app
+
 The main logic lives inside `src/main.ts`.
 The renderer used is slightly modified version of my [Blitz-GL Renderer](https://github.com/maffl-dev/blitz-gl/tree/master). Two important functions I added to the renderer are `drawStaticGeometry` and `drawStaticGeometry`.
 
