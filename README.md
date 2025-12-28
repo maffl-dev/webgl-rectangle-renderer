@@ -8,6 +8,8 @@ A static 2D rectangle renderer built with WebGL:
 **Demo**:
 https://webgl-rectangle-renderer-strokes.vercel.app
 
+<img width="578" height="535" alt="screenshot" src="https://github.com/user-attachments/assets/1e971118-d151-4027-8937-77dcb0519b95" />
+
 The main logic lives inside `src/main.ts`.
 The renderer used is slightly modified version of my [Blitz-GL Renderer](https://github.com/maffl-dev/blitz-gl/tree/master). Two important functions I added to the renderer are `drawStaticGeometry` and `drawStaticGeometry`.
 
