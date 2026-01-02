@@ -21,7 +21,7 @@ function main() {
 const NR_OF_RECTANGLES = 50000;
 const WORLD_SIZE_IN_PX = 30000;
 
-const objects: Array<Rect> = new Array(NR_OF_RECTANGLES);
+const objects: Rect[] = new Array(NR_OF_RECTANGLES);
 let camera: Vec2 = { x: 0.0, y: 0.0 } // world space
 let zoom: number = 1.0;
 let isDragging: boolean = false;
@@ -52,7 +52,7 @@ function init(r: Renderer) {
 				x: rectSizes[sizeIndex].w,
 				y: rectSizes[sizeIndex].h
 			},
-			strokeWidth: i % 2 == 2 ? 2 : 1 + Math.floor(Math.random() * 4.0)
+			strokeWidth: i % 2 == 0 ? 2 : 1 + Math.floor(Math.random() * 4.0)
 		}
 	}
 
@@ -96,7 +96,6 @@ function update(dt: number) {
 		camera.y += prevWorldPos.y - worldPosAfterZoom.y;
 	}
 }
-
 
 function render(r: Renderer) {
 	r.scale(zoom, zoom)
